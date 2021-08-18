@@ -1,0 +1,8 @@
+p {
+  color: darkred;
+}
+
+h {
+  flex: content;
+}
+

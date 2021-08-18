@@ -1,0 +1,16 @@
+<div *ngIf="user">
+    <p>______________________________________________________________________________</p>
+
+    <p (click)="clicked()" >{{user?.name}}</p>
+
+    <div *ngIf="user?.isAdm">
+      Este Usuario é Administrador<br />
+      <button (click)="descricao.focus()">Focus</button><br />
+      <textarea #descricao></textarea>
+    </div>
+
+    <p *ngIf="!(user.name.length > 3)">Nome contem {{user.name.length}} caracteres</p>
+
+    <p>______________________________________________________________________________</p>
+</div>
+<p *ngIf="!user"> Não existe dados a serem exibidos</p>
